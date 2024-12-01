@@ -70,7 +70,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SPSYOK</title>
+    <title>SPSYOK - HOME</title>
+    <link rel="icon" href="./img/skibidi.jpg" type="image/x-icon" sizes="16x16">
     <style>
         /* Your CSS styles here */
         body {

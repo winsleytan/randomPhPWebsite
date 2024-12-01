@@ -76,23 +76,57 @@ $conn = null; // Close the connection
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPSYOK</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f9f9f9; }
-        .container { border: 1px solid black; padding: 20px; width: 600px; background-color: white; }
-        .header { border: 1px solid black; padding: 10px; text-align: center; margin-bottom: 20px; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-image: url('./img/bg.png'); background-repeat: no-repeat;   }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 500px;
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+        .logo h1 {
+            margin: 10px 0 0;
+            font-size: 24px;
+        }
+        .header {  padding: 10px; text-align: center; margin-bottom: 20px; }
         .header h1 { margin: 0; font-size: 36px; }
         .content h2 { font-size: 24px; margin-bottom: 10px; }
         .form-group { margin-bottom: 15px; }
         .form-group label { font-weight: bold; display: block; margin-bottom: 5px; }
-        .form-group input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; }
-        .buttons { display: flex; justify-content: space-between; }
-        .buttons button { padding: 10px 20px; font-size: 14px; border: 1px solid black; border-radius: 5px; cursor: pointer; }
+        .form-group input { width: 100%; padding: 10px; font-size: 14px; }
+        .buttons { display: flex; justify-content: space-between;  border-radius: 5px; }
+        .buttons button { padding: 10px 20px; font-size: 14px;  cursor: pointer;  border-radius: 5px; }
         .footer { font-size: 12px; margin-top: 20px; }
+        .cont {	
+    text-align: center;
+    margin-bottom: 15px;
+}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>SPSYOK</h1>
+            <div class="logo">
+            <img src="./img/logo.png" alt="Pizza Logo">  
         </div>
         <div class="content">
             <h2>PENDAFTARAN PELANGGAN BAHARU</h2>
